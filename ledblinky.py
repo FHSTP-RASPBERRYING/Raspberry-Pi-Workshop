@@ -6,9 +6,10 @@ import time
 
  
 
-print("Hello LED") 
+print("Hallo zu LED Blinky!")
 
-ledPin = #AUFGABE 
+#AUFGABE 
+ledPin = 11 # Definiere ledPin (PIN 9) als Output Pin!
 
 # Pin Setup: 
 
@@ -22,12 +23,12 @@ GPIO.setup(ledPin, GPIO.OUT) # Definiere ledPin (PIN 9) als Output Pin!
 
 print("Druecke STRG+C um das Programm zu beenden!") 
 
-try: # Weiss nicht ob Try-Catch nicht den Rahmen bissl sprengt 
-
+try:
+    
     while 1: 
-
-            #AUFGABE 
-
+        #AUFGABE
+        time.sleep(2)
+        
 except KeyboardInterrupt: # Wenn STRG+C gedrueckt wird beende programm 
 
-    GPIO.cleanup() # GPIO Pins freigeben 
+    GPIO.cleanup() # GPIO Pins freigeben
