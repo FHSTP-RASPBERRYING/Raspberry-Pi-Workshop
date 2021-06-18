@@ -25,6 +25,5 @@ try: # Weiss nicht ob Try-Catch nicht den Rahmen bissl sprengt
             # AUFGABE: bringe LEDs 9 bis 13 wie bei Knight-Rider zum leuchten
             time.sleep(0.50)
             
-
 except KeyboardInterrupt: # Wenn STRG+C gedrueckt wird beende Programm 
     GPIO.cleanup() # cleanup all GPIO

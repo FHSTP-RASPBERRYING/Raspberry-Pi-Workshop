@@ -2,7 +2,6 @@
 
 import sht2x 
  
-
 if __name__ == "__main__": 
     try: 
         with sht2x.SHT21(1) as sht21:		 
