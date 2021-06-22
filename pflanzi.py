@@ -5,16 +5,14 @@ import sht2x
 if __name__ == "__main__": 
     try: 
         with sht2x.SHT21(1) as sht21:		 
-            
             minTemp = 12.0
             maxTemp = 35.0
 
             #AUFGABE
-
-            temp = sht21.read_temperature()  
+            temp = sht21.read_temperature()
+            temp = round(temp)
 
             #AUFGABE 
-
             if temp < minTemp:	 
                 print "Temperatur ist bei %s und ist zu niedrig" % temp
             elif temp > maxTemp:
